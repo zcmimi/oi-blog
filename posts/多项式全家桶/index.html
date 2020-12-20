@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="zh-CN"><head><title>多项式全家桶 - zcmimi's blog</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="dns-prefetch" href="https://oi.zcmimi.top/"><link rel="preload" href="/assets/mdui/css/mdui.min.css" as="style"><link rel="stylesheet" href="/assets/mdui/css/mdui.min.css"><link rel="preload" href="/assets/theme/origin.css" as="style"><link rel="stylesheet" href="/assets/theme/origin.css"><link rel="stylesheet" href="/assets/icon/mqii/mqii.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/github.min.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="/assets/markdown.min.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="/custom.css"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/avatar/avatar.svg"><meta name="name" itemprop="name" content="zcmimi's blog"><meta name="description" itemprop="description" content="zcmimi的博客"><meta name="keywords" itemprop="keywords" content="oi 博客 信息学"><meta name="image" itemprop="image" content="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/avatar/avatar.svg"><meta property="og:url" content="https://oi.zcmimi.top/"><meta property="og:type" content="blog"><meta property="og:title" content="zcmimi's blog"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/avatar/avatar.svg"><meta property="og:description" content="zcmimi的博客"><link rel="canonical" href="https://oi.zcmimi.top/"><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "publisher":{
+        "@type":"Organization",
+        "name":"zcmimi's blog",
+        "logo":"https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/avatar/avatar.svg"
+    },
+    "url":"https://oi.zcmimi.top/",
+    "image":{
+        "@type":"ImageObject",
+        "url":"https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/avatar/avatar.svg"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://oi.zcmimi.top/"
+    },
+    "description":""
+}</script></head><body class="mdui-appbar-with-toolbar mdui-theme-accent-blue"><div class="mdui-progress" id='loading-progress' style="position: fixed;top:0;z-index: 999999;"><div class="mdui-progress-indeterminate"></div></div><div id="theme_css"></div><div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide"><div class="mdui-toolbar"><button class="mdui-btn mdui-btn-icon" mdui-drawer="{target:'#drawer'}" mdui-tooltip="{content: '菜单'}"><i class="mdui-icon material-icons">menu</i></button><a href="/" class="mdui-typo-title">zcmimi's blog</a><div class="mdui-toolbar-spacer"></div><div class="mdui-row mdui-hidden-sm-down"><a href="https://zcmimi.top/" target="_blank" rel="noopener" class="mdui-col text">主页</a><a href="/categories/" target="_blank" rel="noopener" class="mdui-col text">分类</a><a href="/tags/" target="_blank" rel="noopener" class="mdui-col text">标签云</a><a href="/categories/刷题记录/" target="_blank" rel="noopener" class="mdui-col text">刷题记录</a><a href="/links/" target="_blank" rel="noopener" class="mdui-col text">友链</a><a href="/tools/" target="_blank" rel="noopener" class="mdui-col text">工具集</a><a href="/about/" target="_blank" rel="noopener" class="mdui-col text">关于我</a><a href="https://travellings.now.sh/" target="_blank" rel="noopener" class="mdui-col text">Traveling</a></div><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '切换主题'}" mdui-menu="{target: '#theme_menu',align: 'right',covered: false}"><i class="mdui-icon material-icons">view_quilt</i></button><ul class="mdui-menu" id="theme_menu" style="width: fit-content;"><li class="mdui-menu-item" mdui-tooltip="{content: '回归原本'}"><a onclick="theme('day')">日间模式</a></li><li class="mdui-menu-item" mdui-tooltip="{content: '晚上要保护眼睛哦'}"><a onclick="theme('night')">夜间模式</a></li><li class="mdui-menu-item" mdui-tooltip="{content: '满足你的少女心吧'}"><a onclick="theme('pink')">粉红</a></li><li class="mdui-menu-item" mdui-tooltip="{content: '没什么,就是淡蓝色'}"><a onclick="theme('blue')">粉蓝</a></li></ul><button mdui-dialog="{target:'#search_dialog'}" onclick="document.getElementById('search_input').focus();" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '搜索'}"><i class="mdui-icon material-icons">search</i></button><button id='toc_button' class="mdui-btn mdui-btn-icon" mdui-drawer="{target:'#toc_drawer'}" mdui-tooltip="{content: '目录'}" hidden><i class="mdui-icon material-icons">format_list_numbered</i></button></div></div><div class="mdui-container"><div id='page_typ' hidden>article</div><div class="mdui-card article"><div class="mdui-card-primary"><a href="/posts/多项式全家桶/" class="mdui-card-primary-title">多项式全家桶</a><div class="mdui-card-primary-subtitle"><a href="/tags/数论/" class="mdui-chip"><span class="mdui-chip-title">数论</span></a><a href="/tags/多项式/" class="mdui-chip"><span class="mdui-chip-title">多项式</span></a><a href="/tags/ntt/" class="mdui-chip"><span class="mdui-chip-title">ntt</span></a><a href="/tags/fft/" class="mdui-chip"><span class="mdui-chip-title">fft</span></a><a href="/tags/fwt/" class="mdui-chip"><span class="mdui-chip-title">fwt</span></a></div></div><div class="mdui-card-header"><img data-src="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/avatar/avatar64x64.png" src='/assets/icon/loading.svg' alt='avatar' class="mdui-card-header-avatar"><div class="mdui-card-header-title">zcmimi</div><div class="mdui-card-header-subtitle">2020-08-27 22:46:00</div><div class="mdui-card-menu"><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '文章分类'}" mdui-menu="{target:'#categories-list',align:'right',covered: false}"><i class="mdui-icon material-icons">bookmark</i></button><ul class="mdui-menu" id="categories-list"><li class="mdui-menu-item"><a href="/categories/算法/数论/">算法/数论</a></li><li class="mdui-menu-item"><a href="/categories/note/">note</a></li></ul><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '分享'}" mdui-menu="{target:'#share_menu',align:'right',covered: false}"><i class="mdui-icon material-icons">share</i></button><ul class="mdui-menu" id="share_menu" style="width: fit-content;"><li class="mdui-menu-item"><a id="share_weibo" href="https://service.weibo.com/share/share.php?appkey=&title=多项式全家桶 - zcmimi's blog&url=/posts/多项式全家桶/&pic=https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/avatar/avatar.svg&style=simple" target="_blank" rel="noopener"><i class="mdui-menu-item-icon mdui-icon mqii mqii-weibo"></i>分享到微博</a></li><li class="mdui-menu-item"><a id="share_qq" href="https://connect.qq.com/widget/shareqq/index.html?site=zcmimi's blog&title=多项式全家桶 - zcmimi's blog&summary=&pics=https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/avatar/avatar.svg&url=/posts/多项式全家桶/" target="_blank" rel="noopener"><i class="mdui-menu-item-icon mdui-icon mqii mqii-qq_filled"></i>分享到QQ</a></li><li class="mdui-menu-item"><a id="share_twitter" href="https://twitter.com/intent/tweet?text=多项式全家桶 - zcmimi's blog&url=/posts/多项式全家桶/" target="_blank" rel="noopener"><i class="mdui-menu-item-icon mdui-icon mqii mqii-twitter"></i>分享到Twitter</a></li><li class="mdui-menu-item"><a id="share_copy" onclick="copylink()"><i class="mdui-menu-item-icon mdui-icon material-icons">link</i>复制链接</a></li></ul></div></div><div class="mdui-card-content"><div id="md-body" class="md-body text"><p><a href="https://www.luogu.com.cn/blog/wucstdio/duo-xiang-shi-suan-fa-di-chang-shuo-wen-ti">https://www.luogu.com.cn/blog/wucstdio/duo-xiang-shi-suan-fa-di-chang-shuo-wen-ti</a></p>
+<p><a href="https://www.luogu.com.cn/blog/user7035/duo-xiang-shi-zong-jie">https://www.luogu.com.cn/blog/user7035/duo-xiang-shi-zong-jie</a></p>
+<p><a href="http://zory.ink/posts/8c82">http://zory.ink/posts/8c82</a></p>
+<h2>多项式模板集合</h2>
+<p>以下对应代码都可以在这里找到:</p>
+<p><a href="https://oi-templates.vercel.app/多项式">多项式模板集合</a></p>
+<p>使用fft时提高精度:</p>
+<ul>
+<li>使用<code>long double</code></li>
+<li><code>sin</code>与<code>cos</code>应改成<code>std::sin</code>与<code>std::cos</code>,<code>cmath</code>中的<code>sin,cos</code>获得的值为<code>double</code></li>
+</ul>
+<h2>多项式乘法</h2>
+<p><a href="/posts/fft">快速傅里叶变换 FFT</a></p>
+<p><a href="/posts/ntt">快速数论变换 NTT</a></p>
+<p><a href="/posts/fwt">快速沃尔什变换 FWT</a></p>
+<h2>任意模数NTT(三模数)</h2>
+<p>最大的数为<code><latex>p^2\times \max(n,m) \le 10^{23}</latex></code>,所以一般选<code><latex>3</latex></code>个模数即可</p>
+<p>设模数为<code><latex>m_1,m_2,m_3</latex></code></p>
+<p><code><latex_display>
+\begin{cases}
+    x \equiv A \pmod{m_1}\\
+    x \equiv B \pmod{m_2}\\
+    x \equiv C \pmod{m_3}
+\end{cases}
+</latex_display></code></p>
+<p>合并前两个:</p>
+<p><code><latex_display>
+A+k_1m_1=B+k_2m_2\\
+A+k_1m_1\equiv B \pmod{m_2}\\
+k_1\equiv \frac{B-A}{m_1} \pmod{m_2}
+</latex_display></code></p>
+<p>求出<code><latex>k_1</latex></code>,那么<code><latex>x\equiv A+k_1m_1 \pmod{m_1m_2}</latex></code></p>
+<p>记<code><latex>D=A+k_1m_1</latex></code></p>
+<p><code><latex_display>
+D+k_4m_1m_2=C+k_3m_3\\
+D+k_4m_1m_2\equiv C \pmod{m_3}\\
+k_4\equiv \frac{C-D}{m_1m_2} \pmod{m_3}
+</latex_display></code></p>
+<p>求出<code><latex>k_4</latex></code>那么<code><latex>x\equiv D+k_4m_1m_2 \pmod{m_1m_2m_3}</latex></code>,</p>
+<p>因为<code><latex>x&lt;m_1m_2m_3</latex></code>,所以<code><latex>x=D+k_4m_1m_2</latex></code></p>
+<h2>拆系数FFT(MTT)</h2>
+<p>直接FFT精度不足，我们可以采用拆系数FFT</p>
+<p>把每个数拆成<code><latex>ak + b</latex></code>的形式</p>
+<p>然后再相乘、合并即可</p>
+<p>即假设给定多项式<code><latex>N,M</latex></code>设<code><latex>N(x)=ka(x)+b(x),M(x)=kc(x)+d(x)</latex></code></p>
+<p><code><latex>
+\begin{aligned}
+&\quad N(x)M(x)\\
+&=(ka(x)+b(x))(kc(x)+d(x))\\
+&=k^2a(x)c(x)+k(a(x)d(x)+b(x)c(x))+b(x)d(x)
+\end{aligned}
+</latex></code></p>
+<p><strong>需<code><latex>8</latex></code>次DFT</strong></p>
+<p>优化版<strong>需4次DFT</strong></p>
+<p>一下<code><latex>a,b,c,d</latex></code>为上述<code><latex>a(x),b(x),c(x),d(x)</latex></code></p>
+<p>令<code><latex>A_j=a_j+ib_j,B_j=c_j+id_j</latex></code></p>
+<p><code><latex_display>
+\begin{aligned}
+&\quad A(w_n^j)_x\\
+&=(a_x+ib_x){w_n^j}^x\\
+&=a_x(\cos \frac{2\pi xj}n+i\sin \frac{2\pi xj}{n})+b_x(i\cos \frac{2\pi xj}n - \sin \frac{2\pi xj}n)
+\end{aligned}
+</latex_display></code></p>
+<p>同理</p>
+<p><code><latex_display>
+\begin{aligned}
+&\quad A(w_n^{-j})_x\\
+&=(a_x+ib_x){w_n^{-j}}^x\\
+&=a_x(\cos \frac{2\pi xj}n-i\sin \frac{2\pi xj}{n})+b_x(i\cos \frac{2\pi xj}n + \sin \frac{2\pi xj}n)
+\end{aligned}
+</latex_display></code></p>
+<p>因此</p>
+<p><code><latex_display>a(w_n^j)_x=\frac {A(w_n^j)_x.real+A(w_n^{-j})_x.real}2+i\frac{A(w_n^j)_x.imagine-A(w_n^{-j})_x.imagine}2</latex_display></code></p>
+<p>(实部为real,虚部为imagine)</p>
+<p>同理</p>
+<p><code><latex_display>b(w_n^j)_x=\frac {A(w_n^j)_x.imagine+A(w_n^{-j})_x.imagine}2+i\frac{A(w_n^j)_x.real-A(w_n^{-j})_x.real}2</latex_display></code></p>
+<p>设
+<code><latex_display>
+C(x)=a(x)*B(x)=a(x)*c(x)+i*a(x)*d(x)\\
+D(x)=b(x)*B(x)=b(x)*c(x)+i*b(x)*d(x)
+</latex_display></code></p>
+<p>可以发现<code><latex>C</latex></code>的实部为<code><latex>a(x)c(x)</latex></code>,虚部为<code><latex>a(x)d(x)</latex></code>,</p>
+<p>同理<code><latex>D</latex></code>的实部为<code><latex>b(x)c(x)</latex></code>,虚部为<code><latex>b(x)d(x)</latex></code>,</p>
+<p>那么只需要4次FFT就可以求出<code><latex>a(x)c(x),a(x)d(x),b(x)c(x),b(x)d(x)</latex></code></p>
+<p>实测FFT常数大,还是跑不过NTT</p>
+<h2>多项式乘法逆</h2>
+<p>给出多项式<code><latex>A(x)</latex></code>,求<code><latex>B(x)</latex></code>使<code><latex>A\cdot B \equiv 1 \pmod{x^n}</latex></code></p>
+<p>假设已经求出<code><latex>B'</latex></code>满足<code><latex>A\cdot B' \equiv 1 \pmod{x^\frac n2}</latex></code></p>
+<p><code><latex>
+\because A\cdot B \equiv 1 \pmod {x^n}\\
+\because A\cdot B' \equiv 1 \pmod{x^\frac n2}\\
+\therefore A \cdot (B-B') \equiv 0 \pmod{x^\frac n2}\\
+\therefore B-B' \equiv 0 \pmod{x^\frac n2}\\
+\quad (B-B')^2 \equiv 0 \pmod{x^n}\\
+\quad B^2-2BB'+B'^2 \equiv 0 \pmod{x^n}\\
+\therefore A(B^2-2BB'+B'^2) \equiv 0 \pmod{x^n}\\
+\quad AB^2-2ABB'+AB'^2 \equiv 0 \pmod{x^n}\\
+\because A\cdot B \equiv 1 \pmod {x^n}\\
+\therefore B-2B'+AB'^2\equiv 0 \pmod{x^n}\\
+\quad B\equiv 2B'-AB'^2 \pmod{x^n}
+</latex></code></p>
+<h2>多项式除法与取模</h2>
+<p>给出多项式<code><latex>n</latex></code>次多项式<code><latex>F(x)</latex></code>与<code><latex>m</latex></code>次多项式<code><latex>G(x)</latex></code>,求出多项式<code><latex>Q(x),R(x)</latex></code>满足以下条件:</p>
+<ul>
+<li><code><latex>Q(x)</latex></code>次数为<code><latex>n-m</latex></code>,<code><latex>R(x)</latex></code>次数小于<code><latex>m</latex></code></li>
+<li><code><latex>F(x)=Q(x)*G(x)+R(x)</latex></code></li>
+</ul>
+<p>设<code><latex>F_r(x)=x^nf(\frac 1x)</latex></code>,</p>
+<p>可以发现<code><latex>A_r[i]=A[n-i]</latex></code>(<code><latex>A_i=[x^i]F(x)</latex></code>,也就是<code><latex>F(x)</latex></code>的第<code><latex>n</latex></code>项的系数)</p>
+<p><code><latex>
+F(x)=Q(x)*G(x)+R(x)\\
+F(\frac 1x)=Q(\frac 1x)*G(\frac 1x)+R(\frac 1x)\\
+x^nF(\frac 1x)=x^{n-m}Q(\frac 1x)\cdot x^mR(\frac 1x)+x^{n-m+1} \cdot x^{m-1} R(\frac 1x)\\
+F_r(x)=Q_r(x)*R_r(x)+x^{n-m+1}\cdot R_r(x)\\~\\
+F_r(x)\equiv Q_r(x)*G_r(x) \pmod{x^{n-m+1}}\\
+Q_r(x)\equiv F_r(x)*G_r(x)^{-1} \pmod{x^{n-m+1}}\\
+R(x)=F(x)-G(x)*Q(x)
+</latex></code></p>
+<h2>多项式开根</h2>
+<p>给定多项式<code><latex>A(x)</latex></code>,求出<code><latex>B(x)</latex></code>使<code><latex>B(x)^2\equiv A(x) \pmod{x^n}</latex></code></p>
+<p>设<code><latex>B'(x)^2\equiv A(x) \pmod{x^{\frac n2}}</latex></code></p>
+<p><code><latex>\displaystyle
+B(x)\equiv B'(x) \pmod{x^{\frac n2}}\\
+B(x)-B'(x)\equiv 0 \pmod{x^{\frac n2}}\\
+(B(x)-B'(x))^2\equiv 0 \pmod{x^{\frac n2}}\\
+B^2(x)+B'^2(x)-2B(x)B'(x)\equiv 0 \pmod{x^n}\\
+A(x)+B'^2(x)-2B(x)B'(x)\equiv 0 \pmod{x^n}\\
+B(x)=\frac{A(x)+B'^2(x)}{2B'(x)}\\
+</latex></code></p>
+<h2>多项式对数函数</h2>
+<p>前置知识: 求导&amp;积分</p>
+<blockquote><p>求导公式: <code><latex>(x^n)'=nx^{n-1}</latex></code></p>
+<p>积分公式: <code><latex>\int x^n dx=\frac 1{n+1}x^{n+1}</latex></code></p>
+<p>求导与积分互逆</p>
+<p><code><latex>\ln' x=\frac 1x</latex></code></p>
+</blockquote>
+<p>给出多项式<code><latex>A(x)</latex></code>,求出<code><latex>B(x)</latex></code>使<code><latex>B(x)\equiv \ln A(x)</latex></code></p>
+<p>对两边分别求导</p>
+<p><code><latex>
+\begin{aligned}
+B'(x)
+&=\ln' A(x)\\
+&=ln'(A(x)) A'(x)\\
+&=\frac{A'(x)}{A(x)}
+\end{aligned}
+</latex></code></p>
+<p>将读入<code><latex>A</latex></code>求导得到<code><latex>a</latex></code>,求逆得到<code><latex>b</latex></code>,<code><latex>B'=a*b</latex></code></p>
+<p>对<code><latex>G'</latex></code>求积分就可以得到<code><latex>G</latex></code></p>
+<h2>多项式指数函数</h2>
+<p>前置知识: 泰勒展开&amp;牛顿迭代</p>
+<blockquote><p>牛顿迭代:</p>
+<p>证明: <a href="http://blog.miskcoo.com/2015/06/polynomial-with-newton-method">http://blog.miskcoo.com/2015/06/polynomial-with-newton-method</a></p>
+<p>对于一个函数<code><latex>G(x)</latex></code>，求满足条件<code><latex>G(F(x)) \equiv 0 \pmod {x^n}</latex></code>的多项式<code><latex>F(z)</latex></code></p>
+<p><code><latex>\displaystyle F(x)\equiv F_0(x)-\frac{G(F_0(x))}{G'(F_0(x))}\pmod{x^n}</latex></code></p>
+<p>这里<code><latex>F_0(x)</latex></code>指的是在模<code><latex>x^{\frac n2}</latex></code>意义下的答案</p>
+</blockquote>
+<p>给出多项式<code><latex>A(x)</latex></code>,求出<code><latex>B(x)</latex></code>使<code><latex>B(x)\equiv e^{A(x)}</latex></code></p>
+<p>变形得<code><latex>\ln B(x) -A(x)=0</latex></code></p>
+<p>设<code><latex>G(B(x))=\ln B(x) - A(x)</latex></code>,现在要求<code><latex>G</latex></code>的零点</p>
+<p><code><latex>G'(B(x))=\frac 1{B(x)}</latex></code></p>
+<p>代入牛顿迭代公式得</p>
+<p><code><latex>B(x)\equiv B_0(x)(1-\ln B_0(x)+A(x)) \pmod{x^n}</latex></code></p>
+<h2>多项式快速幂</h2>
+<p>给定多项式<code><latex>A(x)</latex></code>,求出<code><latex>B(x)</latex></code>使<code><latex>B(x)\equiv A^k(x) \pmod{x^n}</latex></code></p>
+<p>取对数</p>
+<p><code><latex>\ln B(x)\equiv kA(x) \pmod{x^n}</latex></code></p>
+<p>再取指数</p>
+<p><code><latex>B(x)=e^{kA(x)}</latex></code></p>
+<p><a href="https://www.cnblogs.com/xzyxzy/p/9270361.html">https://www.cnblogs.com/xzyxzy/p/9270361.html</a></p>
+</div></div></div><div class="mdui-row-xs-3 article"><div class="mdui-col"><a href="/posts/sam/" class="text" id='pre_button'><i class="mdui-icon material-icons">arrow_back</i>后缀自动机(SAM)</a></div><div class="mdui-col mdui-text-center">多项式全家桶</div><div class="mdui-col"><a href="/posts/自然数幂和/" class="text mdui-float-right" id='nxt_button'>自然数幂和<i class="mdui-icon material-icons">arrow_forward</i></a></div></div><div class="mdui-card" style="margin-top: 50px;"><div class="mdui-card-primary"><div class="mdui-card-primary-title"><i class="mdui-icon material-icons">comment</i>评论</div></div><div class="mdui-card-content" id='comments'><center><div class="mdui-spinner"></div></center></div></div><script>
+function SetComment(){
+    window.comment=new Valine({
+        el: '#comments',
+        placeholder: "说几句嘛qwq",
+        appId: "NLh0fhLRvD8gOWEC3vtOIRx5-gzGzoHsz",
+        appKey: "DSwqdjPFKAnO4CFMQypfkcB9",
+        path: window.location.pathname,
+    });
+}
+function GenComment(){
+    document.getElementById('comments').innerHTML=`<center><div class="mdui-spinner mdui-spinner-colorful"></div></center>`;
+    mdui.mutation(document.getElementById('comments'));
+
+    if(document.getElementById("comment_js"))SetComment();
+    else{
+        var valinejs=document.createElement('script');
+        valinejs.id="comment_js";
+        valinejs.src="https://cdn.jsdelivr.net/gh/xCss/Valine/dist/Valine.min.js";
+        valinejs.async=true;
+        valinejs.onload=SetComment;
+    }
+    document.getElementsByTagName("head")[0].appendChild(valinejs);
+}
+</script></div><div class="mdui-drawer mdui-drawer-close" id="drawer"><ul class="mdui-list"><li class='mdui-subheader'>Pages</li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons"">bookmark_border</i><a href="/tags/" target="_blank" rel="noopener" class="mdui-list-item-content">标签云</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons"">book</i><a href="/categories/" target="_blank" rel="noopener" class="mdui-list-item-content">分类</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons"">link</i><a href="/links/" target="_blank" rel="noopener" class="mdui-list-item-content">友链</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons"">build</i><a href="/tools/" target="_blank" rel="noopener" class="mdui-list-item-content">工具集</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons"">person</i><a href="/about/" target="_blank" rel="noopener" class="mdui-list-item-content">关于我</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons"">rss_feed</i><a href="/atom.xml" target="_blank" rel="noopener" class="mdui-list-item-content">订阅</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons"">list</i><a href="/sitemap.xml" target="_blank" rel="noopener" class="mdui-list-item-content">站点地图</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons"">comment</i><a href="https://nlh0fhlrsgij.leanapp.cn/" target="_blank" rel="noopener" class="mdui-list-item-content">评论管理</a></li><li class='mdui-subheader'>Catch me</li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons"style='color:dodgerblue'">email</i><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=fwUcIBIWEhY-Dg5RHBAS" target="_blank" rel="noopener" class="mdui-list-item-content">给我写信</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon mqii mqii-telegram"style='color:#66ccff'"></i><a href="https://t.me/zcmimi/" target="_blank" rel="noopener" class="mdui-list-item-content">电报</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon mqii mqii-twitter"style='color:rgba(29,161,242,1.00)'"></i><a href="https://twitter.com/zc_mimi/" target="_blank" rel="noopener" class="mdui-list-item-content">推特</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon mqii mqii-bilibili"style='color:#F06292'"></i><a href="https://space.bilibili.com/110897068/" target="_blank" rel="noopener" class="mdui-list-item-content">哔哩哔哩</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon mqii mqii-netease-cloud-music"style='color:red'"></i><a href="https://music.163.com/user/home/?id=507163653" target="_blank" rel="noopener" class="mdui-list-item-content">网易云音乐</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon mqii mqii-zhihu"style='color:#0084ff'"></i><a href="https://www.zhihu.com/people/zcmimi/" target="_blank" rel="noopener" class="mdui-list-item-content">知乎</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon mqii mqii-github""></i><a href="https://github.com/zcmimi/" target="_blank" rel="noopener" class="mdui-list-item-content">Github</a></li><li class='mdui-subheader'>Links</li><li class="mdui-list-item"><img class="mdui-list-item-icon" src="https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/avatar/avatar64x64.webp" alt><a href="https://zcmimi.top/" target="_blank" rel="noopener" class="mdui-list-item-content">index</a></li><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon mqii mqii-telegram"style='color:#bbb'"></i><a href="https://travellings.now.sh/" target="_blank" rel="noopener" class="mdui-list-item-content">Traveling</a></li></ul></div><div class="mdui-drawer mdui-drawer-close mdui-drawer-right" id="toc_drawer" hidden><ul class="mdui-list" id="toc"></ul></div></body><button class="mdui-fab mdui-fab-mini mdui-fab-fixed mdui-fab-hide" id="totop" onclick="totop()" style="z-index: 99999;"><i class="mdui-icon material-icons">keyboard_arrow_up</i></button><footer class="mdui-m-t-5"><div class="mdui-card"><div class="mdui-card-content mdui-p-a-5"><div class="mdui-container"><div class="mdui-row-sm-3"><div class="mdui-col"><div class="mdui-row"><div class="mdui-col-xs-2 mdui-col-sm-1 mdui-col-md-1" style="margin: 10px;"><a href="https://github.com/zcmimi/" target="_blank" rel="noopener"><i class="mdui-icon mqii mqii-github"></i></a></div><div class="mdui-col-xs-2 mdui-col-sm-1 mdui-col-md-1" style="margin: 10px;"><a href="https://space.bilibili.com/110897068/" target="_blank" rel="noopener"><i class="mdui-icon mqii mqii-bilibili"></i></a></div><div class="mdui-col-xs-2 mdui-col-sm-1 mdui-col-md-1" style="margin: 10px;"><a href="https://www.zhihu.com/people/zcmimi/" target="_blank" rel="noopener"><i class="mdui-icon mqii mqii-zhihu"></i></a></div><div class="mdui-col-xs-2 mdui-col-sm-1 mdui-col-md-1" style="margin: 10px;"><a href="https://twitter.com/zc_mimi/" target="_blank" rel="noopener"><i class="mdui-icon mqii mqii-twitter"></i></a></div></div></div><div class="mdui-col mdui-text-center"><span>Copyright ©&nbsp;2019-2020&nbsp;zcmimi's blog</span></div><div class="mdui-col mdui-text-center mdui-typo"><div>Powered by<a href="https://github.com/zcmimi/py-blog" target="_blank" rel="noopener">py-blog</a></div><div>Theme<a href="https://github.com/zcmimi/py-blog-theme-material" target="_blank" rel="noopener">material</a></div></div></div></div></div></div></footer><div class="mdui-dialog" id="search_dialog" style="min-height: 50%;"><div class="mdui-dialog-title">Search</div><div class="mdui-dialog-content"><div class="mdui-textfield"><i class="mdui-icon material-icons">search</i><input id="search_input" class="mdui-textfield-input" placeholder="搜索"></div><div id="search_result" class="mdui-list"></div></div></div><script async src='/assets/serverless_search.js'></script><script>document.getElementById('search_input').onchange=function(){search("https://search.blog.zcmimi.top");}</script><script async defer src="/assets/mdui/js/mdui.min.js"></script><script async defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script><script async defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script><script defer src='/assets/bundle.min.js'></script><script defer src='/custom.js'></script><script defer>
+var pjaxjs=document.createElement("script");
+pjaxjs.src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js";pjaxjs.async=true;
+pjaxjs.onload=()=>{
+    var pjax=new Pjax({elements:"a",selectors:["title","#TOC",".mdui-container",".js-pjax"]});
+    document.addEventListener('pjax:send',()=>{document.getElementById('loading-progress').hidden=0;});
+    document.addEventListener('pjax:complete',()=>{document.getElementById('loading-progress').hidden=1;pjax_load();});
+}
+document.getElementsByTagName("head")[0].append(pjaxjs);
+</script><script defer>
+window.addEventListener('load',()=>{try{GenComment();}catch{}});
+document.addEventListener('pjax:complete',()=>{try{GenComment();}catch{}});
+</script></html>
